@@ -1,0 +1,13 @@
+<div id="token-tooltip" class="token-tooltip">
+  <div class="token-tooltip-content">
+    <div class="name">{{item.name}}</div>
+    {{#if visible}}
+        <hr>
+        <div class="description">{{{item.system.description}}}</div>
+    {{/if}}
+    {{#if sVisible}}
+        <hr>
+        <div class="secret">{{{item.system.secret}}}</div>
+    {{/if}}
+  </div>
+</div>

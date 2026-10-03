@@ -1,0 +1,27 @@
+{
+    "id": "magicalogia-tooltips",
+    "title": "MagicaLogia Tooltips",
+    "description": "MagicaLogia tooltips",
+    "authors": [
+        {
+            "name": "Key"
+        }
+    ],
+    "version": "0.1.0",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "14"
+    },
+    "esmodules": [
+        "module/init.js"
+    ],
+    "styles": [
+        "styles/mglg-tooltips.css"
+    ],
+    "url": "https://github.com/keyslock/magicalogia-tooltips",
+    "license": "LICENSE.txt",
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "manifest": "https://raw.githubusercontent.com/keyslock/magicalogia-tooltips/main/module.json",
+    "download": "https://github.com/keyslock/magicalogia-tooltips/releases/download/0.1.0/module.zip",
+}

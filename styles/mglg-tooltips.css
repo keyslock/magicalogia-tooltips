@@ -1,0 +1,53 @@
+.token-tooltip {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+
+  background: rgba(20, 20, 20, 0.95);
+  color: #ddd;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
+  width: max-content;
+}
+
+.token-tooltip .name {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.tooltip-ability {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tooltip-ability .row {
+  display: grid;
+  grid-template-columns:
+    1fr
+    4em
+    4em;
+  gap: 4px;
+}
+
+.tooltip-ability .row:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.token-tooltip hr {
+  margin: 0.5em 0 0.5em 0;
+  display: block;
+  overflow: hidden;
+  border-width: 1px;
+  clear: both;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(90deg, #aaaaff 70%, transparent 100%);
+}

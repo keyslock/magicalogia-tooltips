@@ -1,0 +1,24 @@
+<div id="token-tooltip" class="token-tooltip">
+  <div class="token-tooltip-content">
+    <div class="name">{{actor.name}}</div>
+    {{#if isView}}
+      <hr>
+      <div class="mana">{{localize "MAGICALOGIA.Mana"}}: {{actor.system.mana.value}} / {{actor.system.mana.max}}</div>
+      {{#if actor.system.tmp_mana.value}}
+        <div class="tmp_mana">{{localize "MAGICALOGIA.TmpMana"}}: {{actor.system.tmp_mana.value}}</div>
+      {{/if}}
+      <hr>
+      <div class="tooltip-ability">
+      {{#each abilities}}
+        <div class="row">
+          <div class="itemname">
+            {{name}}
+          </div>
+          <div class="cost">{{system.cost}}</div>
+          <div class="charge">{{system.charge}} / {{actor.system.details.root_force}}</div>
+        </div>
+      {{/each}}
+      </div>
+    {{/if}}
+  </div>
+</div>
