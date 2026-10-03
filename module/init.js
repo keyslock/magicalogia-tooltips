@@ -45,6 +45,22 @@ Hooks.on("hoverToken", async (token, hovered) => {
   }
 });
 
+
+Hooks.on("renderApplication", removeTooltip);
+Hooks.on("canvasReady", removeTooltip);
+
+Hooks.once("ready", () => {
+  $(document).on(
+    "mousedown.tooltip-remove contextmenu.tooltip-remove",
+    removeTooltip,
+  );
+  $(window).on("blur.tooltip-remove", removeTooltip);
+  $(window).on("blur.token-tooltip", removeTooltip);
+
+  Hooks.on("renderApplication", removeTooltip);
+  Hooks.on("canvasReady", removeTooltip);
+});
+
 function showTooltip(content) {
   removeTooltip();
 
@@ -64,6 +80,3 @@ function removeTooltip() {
   $("#token-tooltip").remove();
   $(document).off(".token-tooltip");
 }
-
-Hooks.on("renderApplication", removeTooltip);
-Hooks.on("canvasReady", removeTooltip);

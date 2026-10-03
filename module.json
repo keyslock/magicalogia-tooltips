@@ -7,7 +7,7 @@
             "name": "Key"
         }
     ],
-    "version": "0.1.0",
+    "version": "0.1.1",
     "compatibility": {
         "minimum": "12",
         "verified": "14"
@@ -23,5 +23,5 @@
     "readme": "README.md",
     "changelog": "CHANGELOG.md",
     "manifest": "https://raw.githubusercontent.com/keyslock/magicalogia-tooltips/main/module.json",
-    "download": "https://github.com/keyslock/magicalogia-tooltips/releases/download/0.1.0/module.zip"
+    "download": "https://github.com/keyslock/magicalogia-tooltips/releases/download/0.1.1/module.zip"
 }
